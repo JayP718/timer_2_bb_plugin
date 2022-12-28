@@ -1,0 +1,81 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "timer_2",
+    "friendlyName": "Timer 2",
+    "description": " The timer counts down to a specific date time. The timer can use a field from a datasource provider.",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "label": "End Date/Time Field",
+        "key": "endField",
+        "required": true
+      },
+      {
+        "type": "select",
+        "options": ["Small", "Medium", "Large"],
+        "defaultValue": "Large",
+        "key": "size",
+        "label": "Size"
+      },
+      {
+        "type": "select",
+        "options": [
+          {
+            "label": "Square",
+            "value": "0%"
+          },
+          {
+            "label": "Medium-Rounded",
+            "value": "10%"
+          },
+          {
+            "label": "Round",
+            "value": "100%"
+          }
+        ],
+        "key": "shape",
+        "defaultValue": "0%",
+        "label": "Shape"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "defaultValue": "#4CAF50",
+        "key": "color"
+      },
+      {
+        "type": "text",
+        "label": "Countdown Reached Text",
+        "defaultValue": "Complete",
+        "key": "complete_text"
+      },
+      {
+        "type": "boolean",
+        "label": "Show Progress Bar",
+        "defaultValue": false,
+        "key": "showProgressBar"
+      },
+      {
+        "type": "text",
+        "label": "Starting Date/Time Field",
+        "key": "startField",
+        "dependsOn":"showProgressBar"
+      },
+      {
+        "type": "text",
+        "label": "Beginning Date/Time",
+        "key": "beginField",
+        "dependsOn":"showProgressBar",
+        "required": true
+      },
+      {
+        "type": "event",
+        "key": "timeout",
+        "label": "On Timeout"
+      }
+    ]
+  }
+}
