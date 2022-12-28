@@ -7,7 +7,7 @@
 
   export let endField;
   export let shape;
-  export let size;
+  export let size; 
   export let complete_text;
   export let color;
   export let startField= new Date().getTime(); 

@@ -5,20 +5,13 @@
     "name": "timer_2",
     "friendlyName": "Timer 2",
     "description": " The timer counts down to a specific date time. The timer can use a field from a datasource provider.",
-    "icon": "Text",
+    "icon": "Time",
     "settings": [
       {
         "type": "text",
         "label": "End Date/Time Field",
         "key": "endField",
         "required": true
-      },
-      {
-        "type": "select",
-        "options": ["Small", "Medium", "Large"],
-        "defaultValue": "Large",
-        "key": "size",
-        "label": "Size"
       },
       {
         "type": "select",
